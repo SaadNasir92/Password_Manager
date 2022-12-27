@@ -76,9 +76,6 @@ def search():
     else:
         mb.showinfo(title=website, message=f'Username: {user}\nPassword: {pword}')
         pyperclip.copy(pword)
-    finally:
-        website_entry.delete(0, 'end')
-        password_entry.delete(0, 'end')
 
 
 # ---------------------------- UI SETUP ------------------------------- #
